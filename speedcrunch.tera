@@ -3,21 +3,21 @@ whiskers:
   version: "^2.9.0"
   matrix:
     - flavor
-  filename: "themes/catppuccin-{{flavor.identifier}}.json"
+  filename: "themes/catppuccin-{{ flavor.identifier }}.json"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
-{%- set palette = flavor.colors -%}
 {
-    "cursor": "#{{palette.rosewater.hex}}",
-    "number": "#{{palette.peach.hex}}",
-    "parens": "#{{palette.text.hex}}",
-    "result": "#{{palette.green.hex}}",
-    "comment": "#{{palette.overlay0.hex}}",
-    "matched": "#{{palette.teal.hex}}",
-    "function": "#{{palette.blue.hex}}",
-    "operator": "#{{palette.sky.hex}}",
-    "variable": "#{{palette.red.hex}}",
-    "scrollbar": "#{{palette.overlay2.hex}}",
-    "separator": "#{{palette.overlay2.hex}}",
-    "background": "#{{palette.base.hex}}",
-    "editorbackground": "#{{palette.surface0.hex}}"
+  "cursor": "{{ rosewater.hex }}",
+  "number": "{{ peach.hex }}",
+  "parens": "{{ text.hex }}",
+  "result": "{{ green.hex }}",
+  "comment": "{{ overlay0.hex }}",
+  "matched": "{{ teal.hex }}",
+  "function": "{{ blue.hex }}",
+  "operator": "{{ sky.hex }}",
+  "variable": "{{ red.hex }}",
+  "scrollbar": "{{ overlay2.hex }}",
+  "separator": "{{ overlay2.hex }}",
+  "background": "{{ base.hex }}",
+  "editorbackground": "{{ surface0.hex }}"
 }
